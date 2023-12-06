@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <header>
+      <h1>California Life RP</h1>
+      <p>Welcome to our GTA V Role-Playing Server!</p>
+    </header>
+    <link rel="stylesheet" href="style.css" />
+
+    <nav>
+      <a href="/index.html">Home</a>
+      <a href="/meetstaff.html">Meet Our Staff</a>
+      <a href="/contactus.html">Contact Us</a>
+      <a href="/news.html">News</a>
+      <a href="/screenshots.html">In Game Pics</a>
+      <a href="/rules.html">Rules</a>
+      <a href="/faq.html">FAQ</a>
+      <a href="/socials.html">Socials</a>
+      <a href="https://california-life-rp.tebex.io">Tebex</a>
+    </nav>
+
+    <h2>Frequently Asked Questions</h2>
+
+    <div class="faq-item">
+      <input type="checkbox" id="faq1" />
+      <label for="faq1"
+        >Q: Does this script use TeamSpeak or other VOIP services?</label
+      >
+      <div class="faq-content">
+        <p>
+          A: No! SCNP25 is 100% fully self-reliant and does not require any 3rd
+          party service.
+        </p>
+      </div>
+    </div>
+
+    <div class="faq-item">
+      <input type="checkbox" id="faq2" />
+      <label for="faq2"
+        >Q: "I accidentally pressed "deny" instead of "allow" the first time I
+        joined the server and now nobody can hear me. How do I fix?"</label
+      >
+      <div class="faq-content">
+        <p>
+          A: This is actually pretty common, don't be worried though, it's an
+          easy fix! Open windows explorer and navigate to the following path:
+          %AppData%\CitizenFX Then, delete the file named: media_access.json to
+          reset all permissions. Next time you log in to the server, you should
+          see the prompt.
+        </p>
+      </div>
+    </div>
+
+    <div class="faq-item">
+      <input type="checkbox" id="faq3" />
+      <label for="faq3"
+        >Q: "I pressed "allow" and people are not hearing me. I tried everything
+        and I can't get it to work"</label
+      >
+      <div class="faq-content">
+        <p>
+          A: Windows can be a pain sometimes, try reconfiguring your sound
+          settings on your PC. Primarily your "default communications device"
+          under the "recording" tab in sound control panel.
+        </p>
+      </div>
+    </div>
+    <div class="faq-item">
+      <input type="checkbox" id="faq4" />
+      <label for="faq4"
+        >Q: After pulling up my radio for the first time, I see "Out Of Rng" on
+        screen</label
+      >
+      <div class="faq-content">
+        <p>
+          A: Try going to Sandy Shores PD and see if the issue persists. If you
+          still see "Out Of Rng", ensure sure you do not have any VPN/Proxy
+          running on your system as we block these types of connections due to
+          abuse.
+        </p>
+      </div>
+    </div>
+
+    <div class="faq-item">
+      <input type="checkbox" id="faq5" />
+      <label for="faq5"
+        >Q: When I pull up the F8 console I notice errors in red for: scnp25,
+        radio or watchdog. What do I do to fix these errors?</label
+      >
+      <div class="faq-content">
+        <p>
+          A: If the radio is functioning normally, just disregard these errors.
+          It's probably something to do with network lag and isn't important to
+          the end-user. THIS MEANS ITS NOT AN ERROR
+        </p>
+      </div>
+    </div>
+
+    <div class="faq-item">
+      <input type="checkbox" id="faq6" />
+      <label for="faq6">Q: Does this work with ___ framework?</label>
+      <div class="faq-content">
+        <p>A: Yes! SCNP25 works will most frameworks!</p>
+      </div>
+    </div>
+
+    <div class="faq-item">
+      <input type="checkbox" id="faq7" />
+      <label for="faq7">Q: Is the audio intentionally "distorted"?</label>
+      <div class="faq-content">
+        <p>
+          A: NO, the audio is not tampered with in any form. It's passed through
+          the codec and sent back to the client.
+        </p>
+      </div>
+    </div>
+
+    <div class="faq-item">
+      <input type="checkbox" id="faq8" />
+      <label for="faq8">Q: What is "Legacy Audio Mode"?</label>
+      <div class="faq-content">
+        <p>
+          A: Legacy Audio Mode is a deprecated codec that will be removed from
+          the script entirely in a future update.
+        </p>
+      </div>
+    </div>
+
+    <div class="faq-item">
+      <input type="checkbox" id="faq9" />
+      <label for="faq9"
+        >Q: Can the PTT animation be turned off or modified?</label
+      >
+      <div class="faq-content">
+        <p>
+          A: At this time, you can't turn off or modify the PTT animation but,
+          we're looking into this for a future update.
+        </p>
+      </div>
+    </div>
+
+    <div class="faq-item">
+      <input type="checkbox" id="faq10" />
+      <label for="faq10"
+        >Q: A player pressed their emergency button and left the server without
+        clearing it so now we're constantly hearing the beeping. Can we clear
+        it?</label
+      >
+      <div class="faq-content">
+        <p>
+          A: If a user activates their emergency there are a few ways to clear
+          it. 1) The user can press the button again to clear it. 2) Dispatchers
+          have the "CL/EMG" button which will acknowledge & clear the emergency.
+          3) If the user left the server and forgot to clear it, you can use
+          /trsResetEmergency to force clear all emergency activations that are
+          currently active.
+        </p>
+      </div>
+    </div>
+
+    <div class="faq-item">
+      <input type="checkbox" id="faq11" />
+      <label for="faq11"
+        >Q: Some of my users (or me) sound muffled and/or have super low audio
+        even with my volume at 100%.</label
+      >
+      <div class="faq-content">
+        <p>
+          A: This is a common thing and it's pretty simple to fix. First, ensure
+          you're speaking calmly & clearly. If you yell and talk too fast,
+          nobody can understand you (and that's not just an SCNP25 thing, that's
+          everywhere). Second, ensure you (or your users) aren't mumbling. We
+          hear this a lot and, just because that's "how you hear it on a
+          scanner" doesn't mean it's good radio etiquette. Lastly, ensure your
+          windows audio device (specifically your mic) has a good output level.
+          Low audio output = definite issues.
+        </p>
+      </div>
+    </div>
+
+    <footer>
+      <p>&copy; 2023 California Life RP. All rights reserved.</p>
+    </footer>
+  </head>
+</html>

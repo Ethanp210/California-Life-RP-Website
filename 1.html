@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Website Title</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+
+        nav {
+            background-color: #333;
+            overflow: hidden;
+        }
+
+        nav a {
+            float: left;
+            display: block;
+            color: #f2f2f2;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+
+        .nav-links {
+            float: right;
+            color: #fff; /* Make the text white */
+            font-size: 20px; /* Increase the font size */
+            cursor: pointer;
+        }
+
+        @media screen and (max-width: 600px) {
+            nav a:not(:first-child) {
+                display: none;
+            }
+
+            .nav-links.responsive {
+                display: block;
+                float: none;
+            }
+        }
+
+      .nav-links {
+          float: right;
+          color: #fff; /* Make the text white */
+          font-size: 40px; /* Increase the font size */
+          cursor: pointer;
+      }
+
+    </style>
+</head>
+<body>
+
+<nav>
+    <a href="/index.html">Home</a>
+    <a href="/meetstaff.html">Meet Our Staff</a>
+    <a href="/contactus.html">Contact Us</a>
+    <a href="/news.html">News</a>
+    <a href="/screenshots.html">In Game Pics</a>
+    <a href="/rules.html">Rules</a>
+    <a href="/faq.html">FAQ</a>
+    <a href="/socials.html">Socials</a>
+    <div class="nav-links" onclick="toggleMenu()">&#9776; </div>
+</nav>
+
+<script>
+    function toggleMenu() {
+        var navLinks = document.querySelector('.nav-links');
+        var allLinks = document.querySelectorAll('nav a:not(:first-child)');
+
+        for (var i = 0; i < allLinks.length; i++) {
+            allLinks[i].style.display === 'none' ? allLinks[i].style.display = 'block' : allLinks[i].style.display = 'none';
+        }
+    }
+</script>
+
+<!-- Content goes here -->
+
+</body>
+</html>
